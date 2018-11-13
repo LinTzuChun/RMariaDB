@@ -11,7 +11,7 @@ library('dbplyr')
 install.packages("RMariaDB")
 library(RMariaDB)
 
-storiesDb <- dbConnect(RMariaDB::MariaDB(), user='ltc', password='1234', dbname='sensor', host='localhost')
+storiesDb <- dbConnect(RMariaDB::MariaDB(), user='ltc', password='xxxx', dbname='sensor', host='localhost')
 dbListTables(storiesDb)
 db_drop_table(storiesDb,'iris')
 copy_to(storiesDb,iris,temporary = F)
